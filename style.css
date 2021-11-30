@@ -8,14 +8,56 @@
 
 html,
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
 }
 
 /* font-family: 'Inter', sans-serif;
 font-family: 'Lexend Deca', sans-serif; */
 
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.component {
+  position: absolute;
+  max-width: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(244, 38%, 16%);
+}
+
+.container {
+  flex-direction: column;
+}
+
+.hero-img-desktop {
+  display: none;
+}
+
+span.purple {
+  color: hsl(277, 64%, 61%);
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 11px;
   text-align: center;
 }
