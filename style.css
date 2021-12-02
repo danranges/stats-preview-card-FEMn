@@ -82,7 +82,7 @@ h1 {
   height: 100%;
 }
 
-.hero-img-desktop {
+.hero-wrapper-desktop {
   display: none;
 }
 
@@ -134,4 +134,46 @@ span.purple {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  .hero-wrapper-mobile {
+    display: none;
+  }
+
+  .hero-wrapper-desktop {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+
+  .hero-img-desktop,
+  .purple-overlay {
+    max-height: 26rem;
+  }
+
+  .component {
+    flex-direction: row;
+    max-width: fit-content;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .copy-wrapper {
+    margin-left: 3rem;
+    width: 25rem;
+  }
+
+  .stats-wrapper {
+    justify-content: space-between;
+    padding-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  p,
+  h1 {
+    text-align: left;
+  }
 }
